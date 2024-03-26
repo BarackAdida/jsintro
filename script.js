@@ -199,3 +199,47 @@ console.log(namesv4.slice(4))
 console.log(namesCopy)
 console.log(namesCopy.slice(2, 5))
 console.log(namesv3.slice(-1))
+
+//creating objects
+//CRUD operations on objects
+
+const person = {
+    firstname: "Barack",
+    lastname: "Adida",
+    school: {
+        name: "Moringa School Limited",
+        course: {
+            name: "Software Engineering",
+            type: "Hybrid",
+            class: "Infernos",
+            
+        },
+        techMentor: "Eric Mong'are",
+    },
+    friends: [
+        "Lapilly",
+        "Extortionista",
+        "Extortionist"
+    ],
+    age: "18",
+    gender: "Male",
+    isRich: true,
+
+};
+console.log(person)
+
+function test(position, name, age) {
+    return `${position}, ${name}, ${age}`
+}
+console.log(test(1, "Adida Barack", 18))
+//READ
+//dot notation
+console.log(person.firstname)
+console.log(person.lastname)
+console.log(person.friends)
+console.log(person.age)
+//accessing object inside object in object
+console.log(person.school.course)
+//traversing technique
+console.log(person.friends[2])
+console.log(person.school.course.class)
