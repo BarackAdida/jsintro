@@ -1,3 +1,19 @@
+const head = document.getElementById('title')
+const hOne = document.querySelector('#title')
+console.log(head.textContent)
+
+const btn = document.querySelector('#btn')
+btn.addEventListener('click', () => {
+    head.style.color = '#FF2D00'
+    head.style.fontStyle = 'italic'
+    head.style.backgroundColor = '#000'
+    head.style.textTransform = 'uppercase'
+})
+
+console.log(btn.textContent)
+
+
+
 // const basicSalary = parseFloat(prompt("Enter basic salary:"));
 // console.log(parseFloat("12.57")); // Output: 12.57
 // console.log(parseFloat(" 12 ")); // Output: 12
@@ -203,29 +219,29 @@
 // //creating objects
 // //CRUD operations on objects
 
-const person = {
-    firstname: "Barack",
-    lastname: "Adida",
-    school: {
-        name: "Moringa School Limited",
-        course: {
-            name: "Software Engineering",
-            type: "Hybrid",
-            class: "Infernos",
+// const person = {
+    // firstname: "Barack",
+    // lastname: "Adida",
+    // school: {
+    //     name: "Moringa School Limited",
+    //     course: {
+    //         name: "Software Engineering",
+    //         type: "Hybrid",
+    //         class: "Infernos",
             
-        },
-        techMentor: "Eric Mong'are",
-    },
-    friends: [
-        "Lapilly",
-        "Extortionista",
-        "Extortionist"
-    ],
-    age: "18",
-    gender: "Male",
-    isRich: true,
+    //     },
+    //     techMentor: "Eric Mong'are",
+    // },
+    // friends: [
+    //     "Lapilly",
+    //     "Extortionista",
+    //     "Extortionist"
+    // ],
+    // age: "18",
+    // gender: "Male",
+    // isRich: true,
 
-};
+// };
 // console.log(person)
 
 // function test(position, name, age) {
