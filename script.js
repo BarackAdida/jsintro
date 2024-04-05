@@ -1,16 +1,20 @@
-const head = document.getElementById('title')
-const hOne = document.querySelector('#title')
-console.log(head.textContent)
+// const head = document.getElementById('title')
+// const hOne = document.querySelector('#title')
+// console.log(head.textContent)
 
-const btn = document.querySelector('#btn')
-btn.addEventListener('click', () => {
-    head.style.color = '#FF2D00'
-    head.style.fontStyle = 'italic'
-    head.style.backgroundColor = '#000'
-    head.style.textTransform = 'uppercase'
-})
+// const btn = document.querySelector('#btn')
+// btn.addEventListener('click', () => {
+//     head.style.color = '#FF2D00'
+//     head.style.fontStyle = 'italic'
+//     head.style.backgroundColor = '#000'
+//     head.style.textTransform = 'uppercase'
+// })
 
-console.log(btn.textContent)
+// console.log(btn.textContent)
+// const deleteButton = document.getElementById('delButton')
+// deleteButton.addEventListener('click', function(){
+//     alert('You deleted the content!')
+// })
 
 
 
