@@ -1,3 +1,44 @@
+const save = document.querySelector('#save')
+const del = document.querySelector('#del')
+const baseUrl = 'http://localhost:3000'
+// fetchProducts();
+function saveStudentData(){
+    const data = {
+        name: 'Barack Adida',
+        gender: 'Male', 
+        age: 18,    
+    }
+
+    fetch(`${baseUrl}/students`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data)
+    })
+    .then(res => res.json())
+    .then((data) => console.log(data));
+}
+function deleteStudentData() {
+    fetch(`${baseUrl}/students/b6b7`,{
+        method: 'DELETE'
+    })
+    .then(res => res.json())
+    .then((data) => console.log(data))
+}
+
+save.addEventListener('click', saveStudentData)
+del.addEventListener('click', deleteStudentData)
+
+// setTimeout(()=> console.log('Hello Barack'), 10000);
+// function fetchProducts() {
+//     // then chaining
+//     const baseUrl = 'https://fakestoreapi.com'
+//     fetch(`${baseUrl}/products`)
+//     .then(response => response.json())
+//     .then((data) => console.log(data[5].title))
+// }
+
 // const head = document.getElementById('title')
 // const hOne = document.querySelector('#title')
 // console.log(head.textContent)

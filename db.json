@@ -1,0 +1,16 @@
+{
+  "students": [
+    {
+      "id": "f64c",
+      "name": "Barack Adida",
+      "gender": "Male",
+      "age": 18
+    },
+    {
+      "id": "c6fc",
+      "name": "Barack Adida",
+      "gender": "Male",
+      "age": 18
+    }
+  ]
+}
