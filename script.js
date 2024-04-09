@@ -1,3 +1,19 @@
+async function fetchCurrencies() {
+    try {
+        const response = await fetch('https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies.json');
+        const data = await response.json();
+
+        // Display currency names and short forms
+        const currencyList = document.getElementById('currencyList');
+        currencyList.innerHTML = '';
+        for (const currency in data) {
+            const currencyName = data[currency];
+            currencyList.innerHTML += `<p>${currency}: ${currencyName}</p>`;
+        }
+    } catch (error) {
+        console.error('Error fetching currencies:', error);
+    }
+}
 const formElem = document.getElementById('myForm')
 formElem.onsubmit = async (e) => {
     e.precentDefault();
